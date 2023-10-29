@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/d3.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <Title>"Unignorable Threat: The Rising Prevalence of Burglary in Victoria"</Title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 style="text-align: center; font-family: 'Times New Roman';">"Unignorable Threat: The Rising Prevalence of Burglary in Victoria"</h1>
+        <div class="container">
+            <div class="column" style="align-items: center;">
+                <h2>Introduction</h2>
+                <div class="row">
+                    <div class="text two-thirds">
+                        Australia, often proud as one of the safest countries in the
+                        Western world, has an incongruously high incidence of
+                        burglaries and break-ins. Surprisingly, based on private and
+                        governmental security statistics, Australia ranks seventh
+                        globally for the number of burglaries, and this rank has
+                        kept increasing. Victoria, the country's most populous
+                        state, is not exempt from this challenge. Recent data from
+                        the Victoria Crime Statistics Bureau indicates a concerning
+                        uptick in burglary-related incidents over the past year,
+                        with a notable surge of over 80% in burglaries involving
+                        juveniles (See more details). This report delves into this
+                        problematic trend, aiming to dissect its underlying causes
+                        and help residents assess the safety of their homes.
+                        <br />
+                        <br />
+                        <a href="https://www.theage.com.au/national/victoria/aggravated-home-burglaries-by-children-almost-double-in-a-year-crime-stats-show-20230615-p5dgqc.html">(See
+                            more details)</a>
+                    </div>
+                    <div class="one-third">
+                        <img src="img/Page1_Burglary_pixabay.png" style="max-width: 250px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <h3>Crime Map</h3>
+                <div class="row">
+                    <div class="two-thirds">
+                        <img src="img/Page2_LGA_Crime.png">
+                    </div>
+                    <div class="text one-third">
+                        A common misconception is equating a local government
+                        area's (LGA) overall crime rate with its burglary rate.
+                        An LGA with a low crime rate might still experience a
+                        high incidence of burglaries. Regional economic
+                        conditions, community surveillance levels, and available
+                        police resources play significant roles. Simply relying
+                        on crime rate maps often doesn't provide insightful data
+                        on burglary-specific trends, necessitating a deeper
+                        focus on the unique characteristics and changes of
+                        burglaries.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <h3>Burglary and Theft</h3>
+                <div class="row">
+                    <div class="two-thirds">
+                        <div id="Page3_graph"></div>
+                        <script src="js/Page3.js" type="module"></script>
+                        <div class="caption">Burglary and Theft in Property and Deception Offences</div>
+                    </div>
+                    <div class="one-third text">
+                        In the branches of "Property and Deception Offences"
+                        (Category B crimes), "Burglary/Break and Enter" (B30)
+                        consistently ranks high, only surpassed by "theft"
+                        (B40). Their trends closely mirror each other.
+                        Victoria's economic slowdown from 2016 to 2018
+                        correlates with a spike in burglaries. The adjacent
+                        visualization, derived from a decade of Category B
+                        statistics, highlights this potential relationship
+                        between burglary and theft.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <h3>Burglary in each LGA</h3>
+                <div class="row">
+                    <div class="two-thirds">
+                        <div id="Page4_graph"></div>
+                        <script src="js/Page4.js" type="module"></script>
+                        <div class="caption">Burglary trends for each in 10 years for each LGA</div>
+                        <br/>
+                        <br/>
+                        <div class="custom-select">
+                            <div class="select-selected">Select LGAs</div>
+                            <div class="select-filter">
+                                <input type="text" placeholder="Search for LGA">
+                            </div>
+                            <div class="select-items select-hide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-third text">
+                        In Victoria, burglary rates vary significantly across
+                        LGAs, highlighting the crucial role of community
+                        vigilance in curbing such incidents. Intruders typically
+                        shy away from areas with dense populations due to the
+                        heightened risk of detection. For those residing in LGAs
+                        with elevated burglary frequencies, particularly in
+                        locales characterized by abundant foliage and sparse
+                        neighbours, extra precautions are necessary. Beyond
+                        property damage, burglaries can escalate into violent
+                        crimes, jeopardizing personal safety. The adjacent
+                        visualization offers a decade-long perspective on the
+                        shifting burglary trend in each LGA.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <h3>Intruder's preference</h3>
+                <div class="row">
+                    <div class="two-thirds">
+                        <div id="Page5_graph"></div>
+                        <script src="js/Page5.js" type="module"></script>
+                    </div>
+                    <div class="one-third text">
+                        What ever you living in any LGA, when intruders select a
+                        target, it's the visible valuables inside the house that
+                        often determine their choice. While high-value items
+                        like jewellery, cash, and laptops are obvious
+                        attractions, practical household items also appeal to
+                        them. The adjacent graphic depicts the monetary loss
+                        from various stolen items during burglaries over the
+                        past decade. A notable trend emerges: today's intruders
+                        increasingly target everyday essentials. Excluding
+                        livestock will appear in countryside, Most of the top 10
+                        lost items were tools and daily necessities.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <h3>Conclusion and suggestions</h3>
+                <div class="row">
+                    <div class="text">
+                        What is certain is that crime rates in Victoria,
+                        especially the number of burglaries, have rebounded
+                        significantly. Even if there are no valuables like
+                        jewellery in the house, it can attract intruders. As
+                        residents of Victoria, it is important for us to be
+                        prepared and safe for the possibility of more burglaries
+                        in the future, especially those in high-crime LGAs. Here
+                        are some actionable suggestions:
+                        <dl>
+                            <dt><b>Strengthen physical protection</b></dt>
+                            <dd>
+                                Install protective doors, windows and locks, and
+                                ensure all entrances have appropriate security
+                                equipment. Some people also choose to use iron
+                                bars or guardrails to enhance the security of
+                                their windows.
+                            </dd>
+                            <dt><b>Vegetation Management</b></dt>
+                            <dd>
+                                Ensure vegetation around your home is kept from
+                                providing a hiding place for burglars. Prune
+                                trees and shrubs regularly.
+                            </dd>
+                            <dt><b>Reduce incentives</b></dt>
+                            <dd>Don’t display tools, cash, and expensive items near windows or doors.</dd>
+                            <dt><b>Network with neighbours</b></dt>
+                            <dd>Starting a neighbourhood watch or maintaining good relationships with neighbours can help each other monitor homes and report suspicious activity.
+                            </dd>
+                            <dt><b>Store and record valuables</b></dt>
+                            <dd>Label your valuables and save their purchase receipts, photos or serial numbers. This action will make it easier to retrieve the item if it has been
+                                stolen.</dd>
+                        </dl>
+                        Following the advice above can significantly reduce the
+                        risk of burglarising your home.
+                        <hr />
+                        <p style="text-align: right; font-family: 'Times New Roman';"><b>Links and Other Readings</b></p>
+                        <ol style="font-size: 1rem;">
+                            <li>
+                                <a href="https://www.crimestatistics.vic.gov.au/">Data Source: Crime Statistics Agency</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.dsh.gov.au/news-and-media/did-you-know-35-australian-households-were-victims-break-ins-or-attempted-break-ins#:~:text=Data%20available%20from%20the%20Australian,property%20damage%20during%202020%2D2021">Extra
+                                    reading: Did you know - 3.5% of Australian households were victims of break-ins or attempted break-ins?</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
