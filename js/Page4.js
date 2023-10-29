@@ -240,7 +240,7 @@ d3.csv("data/Page4.csv").then(function (data) {
       .attr("stroke", function (d) {
         return color(d[0]);
       })
-      .attr("stroke-width", 1.5)
+      .attr("stroke-width", 3)
       .attr("d", function (d) {
         return d3
           .line()
