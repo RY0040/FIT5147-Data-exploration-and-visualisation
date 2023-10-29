@@ -1,0 +1,190 @@
+.half {
+  width: 50%;
+}
+.one-third {
+  width: 33.4%;
+  display: flex;
+  justify-content: center;
+}
+.two-thirds {
+  width: 66.6%;
+}
+
+body {
+  background-color: #d5d8e1;
+  color: #122f86;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+hr {
+  margin-top: 35px;
+  border-color: #122f86;
+}
+a {
+  text-decoration: none;
+  color: #8a52de;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: rgb(221, 1, 255);
+  }
+}
+.main {
+  margin: 0 10vw;
+}
+.container {
+  display: flex;
+  border-radius: 15px;
+  background: #d5d8e1;
+  box-shadow: 5px 5px 10px #b5b8bf, -5px -5px 10px #f5f8ff;
+  margin-bottom: 20px;
+  padding: 0 30px 30px 30px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 10px 10px 14px #b5b8bf, -10px -10px 14px #f5f8ff;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .main {
+    margin: auto;
+    width: 1200px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  padding: 0 20px 0 20px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+.caption {
+  color: rgb(131, 131, 131);
+  font-size: 1rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border: black solid 2px;
+}
+
+/* Page3 */
+.tooltip {
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Page4 */
+/* 自定义下拉选择框 */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 30vw;
+}
+
+/* 选中的选项 */
+.select-selected {
+  background: #d5d8e1;
+  padding: 8px 16px;
+  box-shadow: 6px 6px 12px #c0c2cb, -6px -6px 12px #eaeef8;
+  border-radius: 4px;
+}
+
+/* 选项列表 */
+.select-items {
+  position: absolute;
+  background-color: #c4c9da;
+  top: 200%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 4px;
+  overflow: auto;
+  max-height: 200px;
+}
+
+/* 隐藏选项列表 */
+.select-hide {
+  display: none;
+}
+
+/* 选项 */
+.select-item {
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  &:hover {
+    background-color: #d5d8e1;
+  }
+}
+
+/* 筛选框 */
+.select-filter {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+/* 筛选输入框 */
+.select-filter input[type="text"] {
+  width: 95%;
+  padding: 2.6% 2.4%;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: absolute;
+}
+
+/* 显示筛选输入框 */
+.select-filter.show input[type="text"] {
+  display: block;
+}
+
+/* Page5 */
+text {
+  font-family: Arial, sans-serif;
+
+  &.label {
+    font-weight: 600;
+  }
+  &.valueLabel {
+    font-weight: 300;
+  }
+  &.yearText {
+    font-size: 3em;
+    font-weight: 700;
+    opacity: 0.25;
+  }
+}
+
+.tick {
+  & text {
+    fill: #122f86;
+  }
+  & line {
+    shape-rendering: CrispEdges;
+    stroke: #babec7;
+  }
+  & line.origin {
+    stroke: #a5a7ab;
+  }
+}
+path.domain {
+  color: rgb(111, 110, 110);
+}
+#Page5_graph path.domain {
+  display: none;
+}

@@ -1,0 +1,14 @@
+
+第二页
+Page2_Map_LGA_crime 用于显示地图的总犯罪记录数据，根据每个维多利亚州（VIC）内的local government area (LGA) 进行分割
+Page2_Map_Property_Burglary 用于显示地图的入室盗窃数据，同样根据LGA进行分割。
+
+第三页
+Page3_Btype_offence_count.csv 用于展示B类犯罪中每一个子类犯罪数量的统计状况，我们主要探讨B30 burglary, B40 theft, 以及总数的讨论。
+
+第四页
+用于展示有关入室盗窃内，住宅（Residential）和非住宅（non_residential）的入侵记录统计。
+Page4_LGA_burglary_subgroup 是按照LGA进行分割， Page4_VIC_burglary_subgroup是VIC当年的整体数据。 
+
+第五页
+每年在入室盗窃中损失的所有物品统计，以及损失损失价值总计（澳元）
